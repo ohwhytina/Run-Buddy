@@ -41,7 +41,7 @@ header nav ul {
     align-items: center;
     list-style: none;
 }
-}
+
 
 header nav ul li a {
     margin: 0 30px;
@@ -86,10 +86,11 @@ section {
 /* Hero Style Start */
 .hero {
     background-image: url("../css/hero-bg.jpg");
-    height: 600px;
     background-size: cover;
     background-position: center;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 /* Hero Style End */
 
@@ -97,9 +98,6 @@ section {
     background-color: #fce138;
     padding: 20px;
     color: #024e76;
-    display; flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 .hero-cta {
@@ -212,11 +210,9 @@ section {
 .trainer {
     margin: 20px;
     flex: 1;
-    width: 900px;
     color: #fce138; 
     margin: 0px auto 30px;
     background: #024e76;
-    overflow: auto;
 }
 
 .trainer img {
@@ -261,13 +257,13 @@ section {
 }
 
 .contact-info {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .contact-info > * {
-    flex:1;
+    flex: 1;
     margin: 15px;
 }
 
