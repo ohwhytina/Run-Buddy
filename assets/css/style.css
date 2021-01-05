@@ -65,6 +65,13 @@
     font-weight: lighter;
     font-size: 1.55vw;
   }
+
+  header nav ul li a:hover{
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+  }
   
   /* HEADER / NAVBAR STYLES END */
   
@@ -179,6 +186,10 @@
     font-size: 16px;
     border-radius: 10px;
   } 
+
+  .hero-form button:hover {
+    background-color: #39a6b2;
+  }
 
   .checkbox-wrapper input, .radio-wrapper input {
     opacity:0;
@@ -350,10 +361,62 @@
     color: var(--primary-color);
   }
   
-  .trainer img {
+  .trainer-1 {
+    background-image: url("../images/trainer-1.jpg");
+    background-size: cover;
+    position: relative;
+  }
+
+  .trainer-2 {
+    background-image: url("../images/trainer-2.jpg");
+    background-size: cover;
+    position: relative;
+  }
+
+  .trainer-3 {
+    background-image: url("../images/trainer-3.jpg");
+    background-size: cover;
+    position:relative;
+  }
+
+  .trainer-img {
     width: 100%;
+    min-height: 300px; 
+    display:flex;
+    padding: 15px;
+    align-items: flex-end;
+  }
+.trainer:hover .trainer-img::after {
+  opacity: 1;
+}
+
+  .trainer-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(rgba(252,225,56,0.3), var(--secondary-color));
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .trainer-img h3 {
+    position: relative;
+    z-index: 100;
+    font-size: 22px;
+    margin-bottom: 5px;
   }
   
+  .trainer-img h4 {
+    position: relative;
+    z-index:100;
+    font-size: 18px;
+    font-weight: lighter;
+
+  }
+
   .trainer-bio {
     padding: 25px;
     line-height: 1.3;
@@ -361,15 +424,17 @@
   
   .trainer-bio h3 {
     font-size: 28px;
+    display: none;
   }
   
   .trainer-bio h4 {
     font-weight: lighter;
     font-size: 22px;
     margin-bottom: 15px;
+    display: none;
   }
   
-  .trainer-bio p {
+  .trainer- p {
     font-size: 17px;
   }
   /* TRAINER STYLES END */
@@ -500,6 +565,10 @@
     padding: 15px 0;
     font-size: 16px;  
     border-radius: 10px;
+  }
+
+  .contact-form button {
+    color: #fce138;
   }
   
   .contact-info a {
